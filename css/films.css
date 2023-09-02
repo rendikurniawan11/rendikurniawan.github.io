@@ -1,0 +1,190 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Global */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(5px);
+    background-color: rgba(6, 6, 85, 0.796);
+}
+
+.navbar ul li a {
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+    color: white;
+    transition: .3s all;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: rgba(6, 6, 85, 0.796);
+}
+
+.navbar .judul-logo {
+    color: white;
+    font-size: 1.7em;
+}
+
+.navbar .navbar-toggler {
+    background-color: white;
+}
+
+.navbar .navbar-toggler {
+    background-color: white;
+}
+
+.navbar .judul.logo {
+    color: white;
+    font-size: 1.7em;
+}
+
+.navbar .navbar-toggler {
+    background-color: white;
+}
+
+/* Jumbotron */
+.jumbotron {
+    margin-top: 90px;
+}
+
+.jumbotron {
+    height: 70vh;
+}
+
+.jumbotron h1 {
+    font-size: 3em;
+}
+
+.jumbotron .rows {
+    width: 60%;
+}
+
+.jumbotron .rows p {
+    font-size: 1.2em;
+}
+
+/* Projects */
+.projects {
+    background-color: rgba(6, 6, 85, 0.796);
+    margin: 0 30px;
+    padding: 60px;
+    border-radius: 30px;
+}
+
+.projects .judul {
+    height: 50px;
+}
+
+.projects h5 {
+    background-color: rgba(6, 6, 85, 0.796);
+    color: white;
+} 
+
+/* Admin */
+.admin {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.273);
+    border: 3px solid white;
+    transition: .4s all;
+}
+
+.admin:hover {
+    transform: scale(1.1);
+    border: 3px solid white;
+    background-color: rgba(6, 6, 85, 0.796);
+}
+
+/* Social Media */
+.sub-footer {
+    background-color: rgba(6, 6, 85, 0.796);
+    color: white;
+}
+
+.sub-footer .social-media {
+    padding: 10px 13px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 1.2em;
+    border: 3px solid white;
+    transition: .3s all;
+}
+
+.sub-footer .social-media:hover {
+    border: 3px solid white;
+    background-color: rgba(6, 6, 85, 0.796);
+    color: white;
+}
+
+.sub-footer .rows a {
+    text-decoration: none;
+    color: rgba(6, 6, 85, 0.796);   
+}
+
+.sub-footer .links a {
+    color: white;
+    text-decoration: none;
+    transition: .3s all;
+}
+
+.sub-footer .links a:hover {
+    transform: translateX(5px);
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 576px) {
+    .jumbotron .container {
+        height: 70vh;
+    }
+
+    .jumbotron .rows {
+        width: 90%;
+    }
+
+    .jumbotron h1 {
+        font-size: 2em;
+    }
+
+    .jumbotron .rows p {
+        font-size: 1em;
+    }
+
+    .projects {
+        background-color: rgba(6, 6, 85, 0.796);
+        margin: 0 10px;
+        padding: 30px 10px;
+        border-radius: 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .projects {
+        background-color: rgba(6, 6, 85, 0.796);
+        margin: 0 20px;
+        padding: 30px 10px;
+        border-radius: 30px;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 415px) {
+    .navbar .navbar-toggler {
+        background-color: white;
+        margin: 10px 0;
+    }
+}
