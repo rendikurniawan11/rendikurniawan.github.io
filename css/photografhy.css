@@ -196,4 +196,8 @@ html, body {
         background-color: white;
         margin: 10px 0;
     }
+
+    .judul-logo {
+        display: none;
+    }
 }

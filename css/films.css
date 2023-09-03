@@ -8,6 +8,14 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
+.btn-primary {
+    transition: .4s all;
+}
+
+.btn-primary:hover {
+    transform: scale(.9);
+}
+
 /* Navbar */
 .navbar {
     backdrop-filter: blur(5px);
@@ -77,14 +85,20 @@ html, body {
     border-radius: 30px;
 }
 
-.projects .judul {
-    height: 50px;
-}
-
 .projects h5 {
     background-color: rgba(6, 6, 85, 0.796);
     color: white;
 } 
+
+.projects .card {
+    border: none;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.175);
+    transition: .3s all;
+}
+
+.projects .card:hover {
+    transform: translateY(-5px);
+}
 
 /* Admin */
 .admin {
@@ -186,5 +200,9 @@ html, body {
     .navbar .navbar-toggler {
         background-color: white;
         margin: 10px 0;
+    }
+
+    .judul-logo {
+        display: none;
     }
 }
