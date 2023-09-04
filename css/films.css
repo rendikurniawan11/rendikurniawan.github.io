@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Global */
-html, body {
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
@@ -18,6 +19,14 @@ html, body {
 
 /* Navbar */
 .navbar {
+    backdrop-filter: blur(5px);
+    background-color: rgba(6, 6, 85, 0.796);
+    transition: padding 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.scrolled-navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
     backdrop-filter: blur(5px);
     background-color: rgba(6, 6, 85, 0.796);
 }
@@ -88,7 +97,7 @@ html, body {
 .projects h5 {
     background-color: rgba(6, 6, 85, 0.796);
     color: white;
-} 
+}
 
 .projects .card {
     border: none;
@@ -144,7 +153,7 @@ html, body {
 
 .sub-footer .rows a {
     text-decoration: none;
-    color: rgba(6, 6, 85, 0.796);   
+    color: rgba(6, 6, 85, 0.796);
 }
 
 .sub-footer .links a {
