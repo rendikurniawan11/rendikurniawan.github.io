@@ -35,3 +35,12 @@ form.addEventListener('submit', e => {
       })
       .catch(error => console.error('Error!', error.message))
 });
+
+// Ambil elemen modal yang akan ditutup
+var modal = document.getElementById('exampleModal1');
+
+// Tambahkan event listener untuk menangkap saat modal ditutup
+modal.addEventListener('hidden.bs.modal', function () {
+    // Hapus overflow: hidden; dari elemen <body>
+    document.body.classList.remove('modal-open');
+});

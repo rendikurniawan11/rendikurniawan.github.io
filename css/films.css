@@ -13,8 +13,31 @@ body {
     transition: .4s all;
 }
 
+.btn-danger {
+    transition: .4s all;
+}
+
 .btn-primary:hover {
     transform: scale(.9);
+}
+
+.btn-danger:hover {
+    transform: scale(.9);
+}
+
+.modal .description-text {
+    background-color: rgba(6, 6, 85, 0.796);
+    color: white;
+}
+
+.modal .tools span {
+    background-color: white;
+    color: rgba(6, 6, 85, 0.796);
+    padding: 4px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 /* Navbar */
