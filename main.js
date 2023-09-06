@@ -1,9 +1,9 @@
 var navbar = document.querySelector('.navbar');
 
 // Mendeteksi peristiwa scroll
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   if (window.scrollY > 0) {
-    navbar.classList.add('scrolled-navbar'); 
+    navbar.classList.add('scrolled-navbar');
   } else {
     navbar.classList.remove('scrolled-navbar');
   }
@@ -18,29 +18,20 @@ const myAlert = document.querySelector('.my-alert');
 myAlert.classList.toggle('d-none');
 
 form.addEventListener('submit', e => {
-   e.preventDefault();
+  e.preventDefault();
 
-   btnLoading.classList.toggle('d-none');
-   btnKirim.classList.toggle('d-none');
-   fetch(scriptURL, {
-         method: 'POST',
-         body: new FormData(form)
-      })
-      .then(response => {
-         btnLoading.classList.toggle('d-none');
-         btnKirim.classList.toggle('d-none');
-         myAlert.classList.toggle('d-none');
-         form.reset();
-         console.log('Success!', response);
-      })
-      .catch(error => console.error('Error!', error.message))
-});
-
-// Ambil elemen modal yang akan ditutup
-var modal = document.getElementById('exampleModal1');
-
-// Tambahkan event listener untuk menangkap saat modal ditutup
-modal.addEventListener('hidden.bs.modal', function () {
-    // Hapus overflow: hidden; dari elemen <body>
-    document.body.classList.remove('modal-open');
+  btnLoading.classList.toggle('d-none');
+  btnKirim.classList.toggle('d-none');
+  fetch(scriptURL, {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(response => {
+      btnLoading.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+      myAlert.classList.toggle('d-none');
+      form.reset();
+      console.log('Success!', response);
+    })
+    .catch(error => console.error('Error!', error.message))
 });
