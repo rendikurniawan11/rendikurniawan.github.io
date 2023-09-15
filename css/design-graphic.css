@@ -1,5 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /* Global */
 html,
@@ -43,9 +44,10 @@ body {
     color: rgba(6, 6, 85, 0.796);
 }
 
-.navbar .judul.logo {
+.navbar .judul-logo {
     color: white;
-    font-size: 1.7em;
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
 }
 
 .navbar .navbar-toggler {
